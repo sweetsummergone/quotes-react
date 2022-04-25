@@ -13,18 +13,18 @@ export default function Quotes() {
         getCandles()
         .then(res => {
             setData(res);
+            setMinValue(Math.min.apply(null, (res.map(element => {
+                return element["lowPrice"];
+            }))));
+            setMaxValue(Math.max.apply(null, (res.map(element => {
+                return element["highPrice"];
+            }))));
         })
     }, []);
 
     React.useEffect(() => {
-        setMinValue(Math.min.apply(null, (data.map(element => {
-            return element["lowPrice"];
-        }))));
-        setMaxValue(Math.max.apply(null, (data.map(element => {
-            return element["highPrice"];
-        }))));
         setScale(minValue * 100 / maxValue < 1 ? minValue * 100 / maxValue : 1 * 100 / maxValue);
-    }, [data])
+    }, [data, minValue, maxValue]);
 
     return (
         <ul className="candles">
