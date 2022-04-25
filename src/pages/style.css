@@ -1,0 +1,84 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-color: #191919;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-family: "Inter", "Courier New", Courier, monospace;
+  font-size: 3em;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+@media screen and (max-width: 600px) {
+  .price {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 100px) {
+  .price {
+    font-size: .5em;
+  }
+}
+  
+
+.graph {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  border-bottom: rgba(255,255,255,0.1) dashed thin;
+  border-top: rgba(255,255,255,0.1) dashed thin;
+}
+
+.indicators {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.indicator {
+  margin: 0;
+  color: white;
+  font-family: "Inter", 'Courier New', Courier, monospace;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 1168px) {
+  .indicator {
+    font-size: 0.5em;
+  }
+}
+
+.candles {
+  width: 90%;
+  list-style: none;
+  padding: 20vh 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.candle {
+  width: 5vw;
+  margin-top: auto;
+}
+
+.candle__outerline {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 1vw;
+}
+
+.candle__innerline {
+  position: absolute;
+  bottom: 0;
+  width: 4vw;
+}
