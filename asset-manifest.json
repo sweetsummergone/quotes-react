@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/quotes-react/static/css/main.87a710c4.css",
+    "main.js": "/quotes-react/static/js/main.96b0af09.js",
+    "static/js/787.1dbb695b.chunk.js": "/quotes-react/static/js/787.1dbb695b.chunk.js",
+    "static/media/Inter-Medium.woff": "/quotes-react/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
+    "static/media/Inter-Black.woff": "/quotes-react/static/media/Inter-Black.c6938660eec019fefd68.woff",
+    "static/media/Inter-Regular.woff": "/quotes-react/static/media/Inter-Regular.8c206db99195777c6769.woff",
+    "index.html": "/quotes-react/index.html",
+    "main.87a710c4.css.map": "/quotes-react/static/css/main.87a710c4.css.map",
+    "main.96b0af09.js.map": "/quotes-react/static/js/main.96b0af09.js.map",
+    "787.1dbb695b.chunk.js.map": "/quotes-react/static/js/787.1dbb695b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87a710c4.css",
+    "static/js/main.96b0af09.js"
+  ]
+}
