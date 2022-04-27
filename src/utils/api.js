@@ -1,5 +1,5 @@
-export const getCandles = (interval = 1, timeValue = "h", limit = 20) => {
-    return fetch(`https://api.binance.com/api/v1/klines?symbol=BTCUSDT&interval=${interval}${timeValue}&limit=${limit}`)
+export const getCandles = (currency = "BTCUSDT", interval = 1, timeValue = "h", limit = 20) => {
+    return fetch(`https://api.binance.com/api/v1/klines?symbol=${currency}&interval=${interval}${timeValue}&limit=${limit}`)
     .then((response) => {
         return response.json();
     })
