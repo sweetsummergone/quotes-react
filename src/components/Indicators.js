@@ -1,6 +1,6 @@
 import GraphContext from "../contexts/GraphContext";
 
-export default function Indicators(props) {
+export default function Indicators() {
     return (
       <GraphContext.Consumer>
         {currency => 

@@ -29,10 +29,10 @@ function App() {
   React.useEffect(() => {
       setScale(minValue * 100 / maxValue < 1 ? minValue * 100 / maxValue : 1 * 100 / maxValue);
   }, [data, minValue, maxValue]);
-
+  
   return (
     <div className="App">
-      <GraphContext.Provider value={{currency: currency, data: data, minValue: minValue, maxValue: maxValue, scale: scale}}>
+      <GraphContext.Provider value={{value: currency, data: data, minValue: minValue, maxValue: maxValue, scale: scale}}>
         <Price />
         <Graph />
       </GraphContext.Provider>

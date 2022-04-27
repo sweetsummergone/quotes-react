@@ -5,7 +5,7 @@ export default function Price() {
         <GraphContext.Consumer>
             {currency => 
                 <div className="price">
-                    <p className="price__value">{currency.maxValue}</p>
+                    <p className="price__value">{`${currency.value} : ${currency.data[0]?.closePrice}`}</p>
                 </div>
             }
         </GraphContext.Consumer>
