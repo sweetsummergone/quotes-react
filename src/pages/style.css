@@ -47,6 +47,8 @@
   
 
 .graph {
+  max-width: 90vw;
+  margin: 0 auto;
   margin-top: 5vh;
   display: flex;
   justify-content: center;
@@ -98,4 +100,26 @@
   position: absolute;
   bottom: 0;
   width: 4vw;
+}
+
+.candle__tooltip {
+  position: fixed;
+  z-index: 1;
+  font-family: "Inter", "Courier New", Courier, monospace;
+  background-color: rgba(28, 28, 28, .7);
+  color: white;
+  width: fit-content;
+  padding: 2%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.candle__tooltip p {
+  margin: 0;
+}
+
+.hidden {
+  display: none;
 }
